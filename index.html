@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT'S RESTAURANT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo"> <img src="logo/logo nhà hàng.webp" alt=""/>CIT'S RESTAURANT</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="menu.html">Thực đơn</a></li>
+            <li><a href="#locations">Cơ sở</a></li>
+            <li><a href="promotions.html">Khuyến mãi</a></li>
+            <li><a href="reservation.html">Đặt bàn</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Slider -->
+        <section class="hero" id="home">
+            <div class="slider-container">
+                <div class="slide active" style="background-image: url('Slides/Ảnh\ 1.png')"></div>
+                <div class="slide" style="background-image: url('Slides/Ảnh\ 2.png')"></div>
+                <div class="slide" style="background-image: url('Slides/Ảnh\ 3.png')"></div>
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <h2 class="section-title">CÂU CHUYỆN THƯƠNG HIỆU</h2>
+            <div class="about-content">
+                <div class="about-slider">
+                    <div class="about-slide active">
+                        <img src="About Us/chef.jpg" alt="Chef">
+                    </div>
+                    <div class="about-slide">
+                        <img src="About Us/develop.jpg" alt="Develop">
+                    </div>
+                    <div class="about-slide">
+                        <img src="About Us/food.jpg" alt="Food">
+                    </div>
+                    <div class="about-slide">
+                        <img src="About Us/service.jpg" alt="service">
+                    </div>
+                </div>
+                <div class="about-image parallax" data-speed="0.8"></div>
+                <div class="about-text">
+                    <h3>Khởi nguồn và đam mê</h3>
+                    <p>Vào đầu năm 2022, từ niềm đam mê ẩm thực thuần Việt hòa quyện tinh hoa thế giới, chị Hường – đầu bếp từng tu nghiệp tại châu Âu – đã ấp ủ giấc mơ tạo ra một không gian ăn uống nơi thực khách không chỉ hưởng thức món ngon mà còn cảm nhận được câu chuyện, tâm huyết đằng sau mỗi đĩa ăn. Khởi đầu với một bếp pop‑up tại Hà Nội, chị và đội ngũ cộng sự đã miệt mài thử nghiệm hàng trăm công thức, tỉ mỉ cân chỉnh hương vị, trình bày để hoàn thiện từng món.</p>
+                    <div class="mission-vision">
+                        <div class="card">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Sứ mệnh</h4>
+                            <p>"Mang đến hành trình ẩm thực hoàn hảo cho mọi thực khách – từ hương vị, không gian đến dịch vụ – để bất cứ ai bước chân vào CIT’S RESTAURANT đều cảm nhận được tình yêu và tâm huyết của chúng tôi.”</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-binoculars"></i>
+                            <h4>Tầm nhìn</h4>
+                            <p>Đến năm 2027, CIT’S RESTAURANT sẽ khẳng định vị thế là chuỗi fine‑dining hàng đầu tại Việt Nam và vươn mình thành đại sứ văn hóa ẩm thực Việt Nam trên bản đồ Đông Nam Á.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section class="locations section-padding" id="locations">
+            <h2 class="section-title">CÁC CƠ SỞ CỦA CIT'S RESTAURANT</h2>
+            <div class="location-grid">
+                <div class="location-card">
+                    <img src="location/Hà Nội.png" alt="Cơ sở 1">
+                    <div class="location-info">
+                        <h3>Hà Nội</h3>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <img src="location/Thành phố HCM.jpg" alt="Cơ sở 2">
+                    <div class="location-info">
+                        <h3> Thành phố Hồ Chí Minh</h3>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <img src="location/Đà Nẵng.jpg" alt="Cơ sở 3">
+                    <div class="location-info">
+                        <h3> Đà Nẵng</h3>
+                    </div>
+                </div>
+            </div>
+        </section> <br>
+
+        <!-- Menu Highlights -->
+        <section class="menu-highlight section-padding">
+            <h2 class="section-title">OUR SPECIAL MENU</h2> <br>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="Menu/Bò Kobe áp chảo.jpg" alt="Món 1">
+                    <div class="item-info">
+                        <h3>Bò Kobe áp chảo</h3>
+                        <p>Bò Kobe áp chảo là miếng thịt Wagyu hảo hạng, vân mỡ mịn màng tan chảy, mang vị ngọt tự nhiên và độ mềm tuyệt đỉnh. Được ướp nhẹ muối biển, tiêu trắng rồi áp chảo vừa đủ tạo lớp vỏ vàng giòn, bên trong vẫn mọng nước. Phục vụ cùng sốt rượu vang đỏ và bơ hành tím, món ăn đem đến trải nghiệm ẩm thực sang trọng và đậm đà.</p>
+                        <span class="price">850.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Menu/Cá áp chảo.webp" alt="Món 2">
+                    <div class="item-info">
+                        <h3>Cá chuối nướng đút lò</h3>
+                        <p>Cá chuối tươi được ướp gia vị đặc trưng (tỏi, ớt, sả) rồi đút lò ở nhiệt độ vừa phải, giữ nguyên độ ngọt mềm của thịt cá. Lớp da vàng giòn hòa quyện cùng hương thơm nồng ấm của thảo mộc. Món ăn đem đến hương vị đậm đà, cân bằng.</p>
+                        <span class="price">500.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Menu/Gan ngỗng.jpg" alt="Món 3">
+                    <div class="item-info">
+                        <h3>Gan ngỗng áp chảo</h3>
+                        <p>Gan ngỗng béo ngậy, mềm mịn được áp chảo nhanh ở lửa lớn để giữ độ mọng và tạo lớp vỏ se cạnh ngoài. Chỉ ướp sơ muối, tiêu cho tôn vị tự nhiên, sau đó rưới chút sốt balsamic giảm chua nhẹ. Món ăn là sự kết hợp hoàn hảo giữa độ béo lôi cuốn và vị chua ngọt tinh tế.</p>
+                        <span class="price">550.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Menu/Mì cua.jpg" alt="Món 4">
+                    <div class="item-info">
+                        <h3> Mì cua Hoàng Đế</h3>
+                        <p>Sợi mì tươi dai ngon hòa cùng thịt cua hoàng đế săn chắc, ngọt thịt, được xào cùng nước sốt kem tươi và hành lá. Gia vị nhẹ nhàng, tôn trọn vị hải sản tự nhiên, thêm chút tiêu trắng cay nồng. Món mì vừa sang trọng, vừa thơm béo, đem lại trải nghiệm ẩm thực đẳng cấp.</p>
+                        <span class="price">600.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Menu/tôm hùm.jpg" alt="Món 5">
+                    <div class="item-info">
+                        <h3>Tôm hùm đút lò sốt phô mai</h3>
+                        <p>Tôm hùm tươi nguyên con được đút lò cùng sốt phô mai béo mịn, kết hợp phô mai cheddar và mozzarella tan chảy. Lớp vỏ vàng óng, thịt tôm ngọt thanh, hòa quyện cùng hương thơm của bơ tỏi và thảo mộc. Phục vụ ngay khi nóng, đem lại vị béo đậm đà và sang trọng.</p>
+                        <span class="price">600.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Menu/súp tôm.jpg" alt="Món 6">
+                    <div class="item-info">
+                        <h3>Súp tôm kiểu Pháp </h3>
+                        <p>Tôm tươi bóc vỏ nấu cùng nước dùng hầm xương, kem tươi và rượu vang trắng, tạo độ sánh mịn và vị ngọt tinh tế. Gia vị tiêu trắng, lá thyme và hành tây xào thơm làm nổi bật hương hải sản. Món súp vừa thanh nhã, vừa ấm áp, đặc trưng phong cách ẩm thực Pháp.</p>
+                        <span class="price">450.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Menu/bánh pháo đài.jpg" alt="Món 7">
+                    <div class="item-info">
+                        <h3> Bánh pháo đài Stilt Fisherman Indulgence</h3>
+                        <p>Chiếc bánh thiên đường của Sri Lanka này có hương vị kem Ai-len trộn với trái cây. Hỗn hợp lựu và xoài cùng với sabayon rượu sâm panh Dom Perignon tạo nên nền tảng của món ăn này. Bánh được làm thủ công với hình chạm khắc sô cô la của ngư dân nhà sàn và được đính một viên đá Aquamarine 80 cara.</p>
+                        <span class="price">2.000.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Menu/tiramisu.jpg" alt="Món 8">
+                    <div class="item-info">
+                        <h3>Tiramisu</h3>
+                        <p>Lớp bánh ladyfinger thấm cà phê espresso, xen kẽ kem mascarpone mịn mượt, phủ bột cacao đắng nhẹ. Vị ngọt vừa phải, hòa cùng hương cà phê và rượu Marsala tinh tế. Món tráng miệng kinh điển của Ý, mang đến cảm giác nhẹ nhàng, thanh lịch.</p>
+                        <span class="price">400.000đ</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Menu/bánh táo.jpg" alt="Món 9">
+                    <div class="item-info">
+                        <h3>Apple Pie</h3>
+                        <p>Nhân táo tươi thái lát mỏng, ướp quế và đường nâu, nướng trong lớp vỏ bánh giòn tan. Hương quế ấm áp và vị táo ngọt thanh tạo nên sự cân bằng hoàn hảo. Phục vụ kèm kem vani để tăng thêm độ béo mát, phù hợp cho mọi mùa trong năm.</p>
+                        <span class="price">450.000đ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotions Section -->
+        <section class="promotions section-padding">
+            <h2 class="section-title">Khuyến mãi</h2>
+            <div class="promo-carousel">
+                <div class="carousel-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="promo-slide active">
+                    <img src="Khuyến mãi/1.jpg" alt="Khuyến mãi 1">
+                    <div class="promo-content">
+                        <h3>Ưu đãi 20% cho bữa tối</h3>
+                        <p>Áp dụng từ 18h - 20h Thứ hai đầu tiên của tháng</p>
+                        <button class="btn-detail">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="promo-slide active">
+                    <img src="Khuyến mãi/2.jpg" alt="Khuyến mãi 2">
+                    <div class="promo-content">
+                        <h3>Giảm giá 10% cho nhóm đi từ 10 người</h3>
+                        <p>Áp dụng vào ngày 15 hàng tháng</p>
+                        <button class="btn-detail">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="promo-slide active">
+                    <img src="Khuyến mãi/3.jpg" alt="Khuyến mãi 3">
+                    <div class="promo-content">
+                        <h3>Sinh nhật thật chill - Ưu đãi đặc biệt</h3>
+                        <p>Tặng 1 phần bánh sinh nhật miễn phí cho khách tổ chức tiệc tại nhà hàng</p>
+                        <button class="btn-detail">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="promo-slide active">
+                    <img src="Khuyến mãi/4.jpg" alt="Khuyến mãi 4">
+                    <div class="promo-content">
+                        <h3>Wine Wednesday</h3>
+                        <p>Giảm 20% cho tất cả các loại rượu vang trong menu</p>
+                        <button class="btn-detail">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="promo-slide active">
+                    <img src="Khuyến mãi/5.jpg" alt="Khuyến mãi 5">
+                    <div class="promo-content">
+                        <h3>Thematic Degustation</h3>
+                        <p>Thực đơn được thiết kế riêng bởi Chef</p>
+                        <button class="btn-detail">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="promo-slide active">
+                    <img src="Khuyến mãi/6.jpg" alt="Khuyến mãi 6">
+                    <div class="promo-content">
+                        <h3>Private Chef Table</h3>
+                        <p>Đầu bếp chính nấu riêng theo yêu cầu khách hàng</p>
+                        <button class="btn-detail">Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section-padding">
+            <h2 class="section-title">Ý kiến khách hàng</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="Customer/1.png" alt="Khách hàng 1">
+                    <h4>Taylor Swift</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Trải nghiệm một bữa tối thật tuyệt vời và khó quên tại CIT'S RESTAURANT.</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="Customer/7.jpg" alt="Khách hàng 2">
+                    <h4>Gordon Ramsay</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Bò Kobe áp chảo xuất sắc, mềm tan trong miệng. Chắc chắn sẽ quay lại. </p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="Customer/3.webp" alt="Khách hàng 3">
+                    <h4>Hứa Quang Hán</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Set tasting đa dạng, mỗi món đều có câu chuyện riêng – trải nghiệm đáng giá.</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="Customer/4.jpg_large" alt="Khách hàng 4">
+                    <h4>Trix</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Mì cua Hoàng Đế ngon tuyệt, hương vị đậm đà, trang trí đẹp mắt. </p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="Customer/5.jpg" alt="Khách hàng 5">
+                    <h4>Bada Lee</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Không gian ấm cúng, đồ ăn tinh tế - một bữa ăn hoàn hảo.</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="Customer/6.jpg" alt="Khách hàng 6">
+                    <h4>Thomas</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Dịch vụ chu đáo, nhân viên hết sức nhiệt tình và chuyên nghiệp.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo"><img src="logo/logo nhà hàng.webp" alt=""></div>
+                <h3>CIT'S RESTAURANT</h3>
+                <p>Mang đến hương vị đẳng cấp thế giới</p>
+            </div>
+            <div class="footer-col">
+                <h3>Liên hệ</h3>
+                <p><i class="fas fa-phone"></i> 0123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@citsrestaurant.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Theo dõi chúng tôi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--Hết phần trang chủ-->
+    <script src="main.js"></script>
+</body>
+</html>
+</body>
+</html>
