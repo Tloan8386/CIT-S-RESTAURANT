@@ -163,7 +163,9 @@ main {
 }
 .feedback-card p {
     color: #555;
+    text-align: center;
 }
+
 .feedback-card .dish-name{
     color: navy;
     font-size: 1.2rem;
