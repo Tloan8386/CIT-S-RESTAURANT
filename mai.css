@@ -325,7 +325,8 @@ img,
 /* Với màn hình nhỏ hơn 768px */
 @media (max-width: 768px) {
   .carousel {
-    max-width: 90%;
+    max-width: none;
+    width: 100%;
   }
 
   .footer-content {
