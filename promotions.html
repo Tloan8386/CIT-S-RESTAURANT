@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <title>Chương trình khuyến mãi</title>
   <link rel="stylesheet" href="mai.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 <!-- Navigation -->
 <nav class="navbar">
     <div class="logo"> <img src="logo/logo nhà hàng.webp" alt=""/>CIT'S RESTAURANT</div>
     <ul class="nav-links">
-        <li><a href="#home" class="active">Trang chủ</a></li>
-        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="index.html#home" >Trang chủ</a></li>
+        <li><a href="index.html#about">Giới thiệu</a></li>
         <li><a href="menu.html">Thực đơn</a></li>
-        <li><a href="#locations">Cơ sở</a></li>
-        <li><a href="promotions.html">Khuyến mãi</a></li>
+        <li><a href="index.html#locations">Cơ sở</a></li>
+        <li><a href="promotions.html" class="active">Khuyến mãi</a></li>
         <li><a href="reservation.html">Đặt bàn</a></li>
     </ul>
     <div class="menu-toggle">
@@ -24,31 +25,138 @@
 
   <h1>Chương trình khuyến mãi</h1>
 
-  <div class="promo-list">
-    <div class="promo-card">
-      <img src="promotion/2.jpg" alt="Khuyến mãi 1">
-      <div class="promo-content">
-        <h2>Mua 1 tặng 1</h2>
-        <p>Áp dụng cho toàn bộ sản phẩm trong tuần này!</p>
+  <div class="carousel">
+    <!-- Các slide chương trình khuyến mãi -->
+    <div class="slide active">
+      <img src="promotion/Private Chef.jpg" alt="Khuyến mãi 1">
+      <div class="caption">
+        <h2>Private Chef's Table Experience</h2>
+        <p>Thực khách được đầu bếp chính mời ăn thử và giải thích từng món trong thực đơn tasting 8–10 món. </p>
+        <button onclick="showDetails(0)">Chi tiết</button>
       </div>
     </div>
 
-    <div class="promo-card">
-      <img src="promotion/1.jpg" alt="Khuyến mãi 2">
-      <div class="promo-content">
-        <h2>Giảm 50%</h2>
-        <p>Cho đơn hàng đầu tiên từ 8.000.000 VNĐ trở lên.</p>
+    <div class="slide">
+      <img src="promotion/wine.jpg" alt="Khuyến mãi 2">
+      <div class="caption">
+        <h2>Wine Subscription Club</h2>
+        <p>Đăng ký chương trình để trải nghiệm những loại rượu vang đặc biệt của nhà hàng.</p>
+        <button onclick="showDetails(1)">Chi tiết</button>
       </div>
     </div>
 
-    <div class="promo-card">
-      <img src="promotion/3.jpg" alt="Khuyến mãi 3">
-      <div class="promo-content">
-        <h2>Miễn phí vận chuyển</h2>
-        <p>Khi mua từ 3 sản phẩm bất kỳ.</p>
+    <div class="slide">
+      <img src="promotion/seasonal menu.jpg" alt="Khuyến mãi 3">
+      <div class="caption">
+        <h2>Seasonal Tasting Menu Launch</h2>
+        <p>Vào đầu mỗi mùa (Xuân – Hạ – Thu – Đông), nhà hàng ra mắt thực đơn thử vị 6 món đặc sắc theo mùa, kèm rượu pairing.</p>
+        <button onclick="showDetails(2)">Chi tiết</button>
       </div>
     </div>
+
+    <div class="slide">
+      <img src="promotion/exclusive.jpg" alt="Khuyến mãi 4">
+      <div class="caption">
+        <h2>Exclusive Cooking Masterclass</h2>
+        <p>Workshop 2 giờ với Chef trưởng.</p>
+        <button onclick="showDetails(3)">Chi tiết</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="promotion/anniversary.jpg" alt="Khuyến mãi 5">
+      <div class="caption">
+        <h2>Anniversary Fine-Dining Package</h2>
+        <p>Combo trọn gói cho kỷ niệm (ngày cưới, ngày thành lập công ty…).</p>
+        <button onclick="showDetails(4)">Chi tiết</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="promotion/plus.jpg" alt="Khuyến mãi 6">
+      <div class="caption">
+        <h2>Corporate Loyalty Program</h2>
+        <p>Dành cho doanh nghiệp chi tiêu định kỳ. </p>
+        <button onclick="showDetails(5)">Chi tiết</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="promotion/Gift.jpg" alt="Khuyến mãi 7">
+      <div class="caption">
+        <h2>Gourmet Gift Vouchers with Luxury Packaging</h2>
+        <p>Phiếu quà tặng (500k/1.000k/2.000k VND) kèm hộp quà gỗ cao cấp.</p>
+        <button onclick="showDetails(6)">Chi tiết</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="promotion/Early access.jpg" alt="Khuyến mãi 8">
+      <div class="caption">
+        <h2>Early-Access to New Menu Items</h2>
+        <p>Khách VIP được mời tham dự “New Dish Preview”.</p>
+        <button onclick="showDetails(7)">Chi tiết</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="promotion/private event.jpg" alt="Khuyến mãi 9">
+      <div class="caption">
+        <h2>Private Event Space Discount</h2>
+        <p>Giảm 20% phí thuê phòng riêng / phòng tiệc cho nhóm từ 20 khách trở lên.</p>
+        <button onclick="showDetails(8)">Chi tiết</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="promotion/pre-order.jpg" alt="Khuyến mãi 10">
+      <div class="caption">
+        <h2>Luxury Holiday Feast Pre-Order</h2>
+        <p>Dành cho các dịp lễ lớn (Valentine, Quốc tế Phụ nữ, Giáng Sinh, Tết Nguyên Đán).</p>
+        <button onclick="showDetails(9)">Chi tiết</button>
+      </div>
+    </div>
+
+    <!-- Nút điều hướng -->
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
   </div>
+
+<!-- Popup chi tiết CTKM -->
+<div id="detailPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closeDetails()">&times;</span>
+    <h2 id="detailTitle"></h2>
+    <p id="detailDescription"></p>
+  </div>
+</div>
+</body>
+</html>
+
+ <!-- Footer -->
+ <footer class="footer">
+  <div class="footer-content">
+      <div class="footer-col">
+          <div class="logo"><img src="logo/logo nhà hàng.webp" alt="logo"></div>
+          <h3>CIT'S RESTAURANT</h3>
+          <p>Mang đến hương vị đẳng cấp thế giới</p>
+      </div>
+      <div class="footer-col">
+          <h3>Liên hệ</h3>
+          <p><i class="fas fa-phone"></i> 0123 456 789</p>
+          <p><i class="fas fa-envelope"></i> info@citsrestaurant.com</p>
+      </div>
+      <div class="footer-col">
+          <h3>Theo dõi chúng tôi</h3>
+          <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+<script src="mai.js"></script>
 </body>
 </html>
 

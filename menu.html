@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Menu</title>
     <link href="MENU.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo"> <img src="logo/logo nhà hàng.webp" alt=""/>CIT'S RESTAURANT</div>
         <ul class="nav-links">
-            <li><a href="#home">Trang chủ</a></li>
-            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="index.html#home">Trang chủ</a></li>
+            <li><a href="index.html#about">Giới thiệu</a></li>
             <li><a href="menu.html" class="active">Thực đơn</a></li>
-            <li><a href="#locations">Cơ sở</a></li>
+            <li><a href="index.html#locations">Cơ sở</a></li>
             <li><a href="promotions.html">Khuyến mãi</a></li>
             <li><a href="reservation.html">Đặt bàn</a></li>
         </ul>
@@ -28,239 +29,280 @@
     </header>
     <main>
         <section id="product-menu">
-            <div class="product-card">
+            <div class="product-card" data-name="Cá chuối nướng đút lò" data-price="300.000 VND" data-image="Menu/Cá áp chảo.webp" data-description="Món cá chuối nướng với hương vị đặc trưng của ẩm thực Việt Nam, được chế biến cầu kỳ và tinh tế." data-ingredients="Cá chuối, Gia vị đặc biệt, Rau sống">
                 <img src="Menu/Cá áp chảo.webp">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3> Cá chuối nướng đút lò</h3>
-                <p> Giá: 300.000 VND</p>
+                <p class="price">  Giá: 300.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Gan ngỗng áp chảo" data-price="550.000 VND" data-image="Menu/Gan ngỗng.jpg" data-description="Món gan ngỗng áp chảo hảo hạng, béo ngậy, tan chảy trong miệng, mang đến trải nghiệm ẩm thực đẳng cấp." data-ingredients="Gan ngỗng, Bơ, Rượu vang, Gia vị">
                 <img src="Menu/Gan ngỗng.jpg">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3> Gan ngỗng áp chảo</h3>
-                <p> Giá: 550.000 VND</p>
+                <p class="price"> Giá: 550.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Mì cua Hoàng Đế" data-price="750.000 VND" data-image="Menu/Mì cua.jpg" data-description="Mì cua Hoàng Đế với sợi mì dai ngon, thịt cua tươi ngọt, đậm đà hương vị biển cả." data-ingredients="Cua Hoàng Đế, Mì tươi, Nước dùng đặc biệt, Rau thơm">
                 <img src="Menu/Mì cua.jpg">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3> Mì cua Hoàng Đế</h3>
-                <p> Giá: 750.000 VND</p>
+                <p class="price"> Giá: 750.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Tôm hùm đút lò sốt phô mai" data-price="550.000 VND" data-image="Menu/tôm hùm.jpg" data-description="Tôm hùm đút lò sốt phô mai với thịt tôm chắc ngọt, sốt phô mai béo ngậy, thơm lừng." data-ingredients="Tôm hùm, Phô mai, Bơ, Sữa tươi, Gia vị">
                 <img src="Menu/tôm hùm.jpg">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3>Tôm hùm đút lò sốt phô mai</h3>
-                <p> Giá: 550.000 VND</p>
+                <p class="price"> Giá: 550.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Súp tôm kiểu Pháp" data-price="250.000 VND" data-image="Menu/súp tôm.jpg" data-description="Súp tôm kiểu Pháp với hương vị đậm đà, thơm ngon của tôm tươi và các loại gia vị đặc trưng." data-ingredients="Tôm, Kem tươi, Bơ, Rượu vang trắng, Hành tây, Cà rốt">
                 <img src="Menu/súp tôm.jpg">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3> Súp tôm kiểu Pháp</h3>
-                <p>Giá: 250.000 VND</p>
+                <p class="price">Giá: 250.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Chocolate Cake" data-price="200.000 VND" data-image="Menu/Chocolate Cake.jpg" data-description="Bánh Chocolate Cake mềm mịn, đậm đà hương vị chocolate, là món tráng miệng hoàn hảo cho mọi thực khách." data-ingredients="Chocolate đen, Bột mì, Trứng gà, Đường, Bơ, Sữa tươi">
                 <img src="Menu/Chocolate Cake.jpg">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3> Chocolate Cake</h3>
-                <p>Giá: 200.000 VND</p>
+                <p class="price">Giá: 200.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Bánh pháo đài Stilt Fisherman Indulgence" data-price="2.000.000 VND" data-image="Menu/bánh pháo đài.jpg" data-description="Bánh pháo đài Stilt Fisherman Indulgence là một tác phẩm nghệ thuật ẩm thực độc đáo, kết hợp hương vị tinh tế và cách trình bày ấn tượng." data-ingredients="Socola đen, Bột mì, Trứng, Đường, Bơ, Sữa">
                 <img src="Menu/bánh pháo đài.jpg">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3>Bánh pháo đài Stilt Fisherman Indulgence</h3>
-                <p> Giá: 2.000.000 VND</p>
+                <p class="price"> Giá: 2.000.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Tiramisu" data-price="220.000 VND" data-image="Menu/tiramisu.jpg" data-description="Tiramisu là món tráng miệng nổi tiếng của Ý, với vị cà phê đậm đà, kem phô mai mềm mịn và lớp bột cacao thơm lừng." data-ingredients="Bánh ladyfinger, Cà phê, Phô mai Mascarpone, Trứng gà, Đường, Cacao">
                 <img src="Menu/tiramisu.jpg">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3> Tiramisu</h3>
-                <p>Giá: 220.000 VND</p>
+                <p class="price">Giá: 220.000 VND</p>
                 <br>
-                 <button>Chi tiết</button>
+                <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Apple Pie" data-price="250.000 VND" data-image="Menu/bánh táo.jpg" data-description="Apple Pie là món bánh truyền thống của Mỹ, với lớp vỏ giòn rụm, nhân táo chua ngọt và hương quế ấm áp." data-ingredients="Táo, Bột mì, Đường, Bơ, Quế, Chanh">
                 <img src="Menu/bánh táo.jpg">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3> Apple Pie</h3>
-                <p>Giá: 250.000 VND</p>
+                <p class="price">Giá: 250.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Bò Kobe áp chảo" data-price="500.000 VND" data-image="Menu/Bò Kobe áp chảo.jpg" data-description="Bò Kobe áp chảo là món ăn sang trọng, với thịt bò mềm tan, hương vị đậm đà và đặc trưng." data-ingredients="Thịt bò Kobe, Muối, Tiêu, Dầu ăn">
                 <img src="Menu/Bò Kobe áp chảo.jpg">
                 <span class="best-seller-badge">Best Seller</span>
                 <h3> Bò Kobe áp chảo</h3>
-                <p> Giá: 500.000 VND</p>
+                <p class="price"> Giá: 500.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Ốc sên nướng bơ tỏi" data-price="250.000 VNĐ" data-image="Menu/Ốc sên nướng bơ tỏi.jpg" data-description="Ốc sên nướng bơ tỏi là món ăn đặc trưng của ẩm thực Pháp, với hương vị thơm lừng của bơ tỏi và thịt ốc sên dai ngon." data-ingredients="Ốc sên, Bơ, Tỏi, Rau mùi, Muối, Tiêu">
                 <img src="Menu/Ốc sên nướng bơ tỏi.jpg">
                 <h3>Ốc sên nướng bơ tỏi</h3>
-                <p> Giá: 250.000 VNĐ</p>
+                <p class="price"> Giá: 250.000 VNĐ</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Bò lúc lắc sốt tiêu xanh" data-price="550.000 VND" data-image="Menu/Bò lúc lắc sốt tiêu xanh.jpg" data-description="Bò lúc lắc sốt tiêu xanh là món ăn đậm đà, cay nồng, với thịt bò mềm ngọt và hương vị đặc trưng của tiêu xanh." data-ingredients="Thịt bò, Tiêu xanh, Hành tây, Ớt chuông, Gia vị">
                 <img src="Menu/Bò lúc lắc sốt tiêu xanh.jpg">
                 <h3>Bò lúc lắc sốt tiêu xanh</h3>
-                <p> Giá: 550.000 VND</p>
+                <p class="price"> Giá: 550.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Súp hành kiểu Pháp" data-price="150.000 VND" data-image="Menu/Súp hành kiểu Pháp.jpg" data-description="Súp hành kiểu Pháp là món súp ấm nóng, thơm ngon, với vị ngọt của hành tây, vị đậm đà của nước dùng và lớp phô mai tan chảy." data-ingredients="Hành tây, Bơ, Bột mì, Nước dùng bò, Phô mai Gruyère, Bánh mì">
                 <img src="Menu/Súp hành kiểu Pháp.jpg">
                 <h3>Súp hành kiểu Pháp </h3>
-                <p> Giá: 150.000 VND</p>
+                <p class="price"> Giá: 150.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Gà hầm rượu vang đỏ" data-price="350.000 VND" data-image="Menu/Gà hầm rượu vang đỏ.jpg" data-description="Gà hầm rượu vang đỏ là món ăn đậm đà, ấm cúng, với thịt gà mềm ngọt, hương vị nồng nàn của rượu vang và rau củ hầm nhừ." data-ingredients="Gà, Rượu vang đỏ, Nấm, Thịt xông khói, Hành tây, Cà rốt">
                 <img src="Menu/Gà hầm rượu vang đỏ.jpg">
                 <h3>Gà hầm rượu vang đỏ</h3>
-                <p> Giá: 350.000 VND</p>
+                <p class="price"> Giá: 350.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Súp hải sản kiểu Pháp" data-price="400.000 VND" data-image="Menu/Súp hải sản kiểu Pháp.jpg" data-description="Súp hải sản kiểu Pháp là món súp thơm ngon, bổ dưỡng, với sự kết hợp của nhiều loại hải sản tươi ngon và hương vị đặc trưng của ẩm thực Pháp." data-ingredients="Tôm, Mực, Sò điệp, Cá, Kem tươi, Rượu vang trắng, Cà chua">
                 <img src="Menu/Súp hải sản kiểu Pháp.jpg">
                 <h3>Súp hải sản kiểu Pháp</h3>
-                <p> Giá: 400.000 VND</p>
+                <p class="price"> Giá: 400.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Rau củ hầm kiểu Pháp" data-price="200.000 VND" data-image="Menu/Rau củ hầm kiểu Pháp.jpg" data-description="Rau củ hầm kiểu Pháp là món ăn thanh đạm, bổ dưỡng, với sự kết hợp hài hòa của nhiều loại rau củ tươi ngon và hương vị tinh tế." data-ingredients="Cà rốt, Khoai tây, Bí ngòi, Đậu que, Cà chua, Hành tây, Tỏi">
                 <img src="Menu/Rau củ hầm kiểu Pháp.jpg">
                 <h3>Rau củ hầm kiểu Pháp</h3>
-                <p> Giá: 200.000 VND</p>
+                <p class="price"> Giá: 200.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Bít tết ăn kèm khoai tây chiên" data-price="450.000 VND" data-image="Menu/Bít tết ăn kèm khoai tây chiên.jpg" data-description="Bít tết ăn kèm khoai tây chiên là món ăn quen thuộc nhưng không kém phần hấp dẫn, với miếng thịt bò mềm ngọt, đậm đà và khoai tây chiên giòn rụm." data-ingredients="Thịt bò, Khoai tây, Dầu ăn, Muối, Tiêu">
                 <img src="Menu/Bít tết ăn kèm khoai tây chiên.jpg">
                 <h3>Bít tết ăn kèm khoai tây chiên</h3>
-                <p> Giá: 450.000 VND</p>
+                <p class="price"> Giá: 450.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Hàu ăn kèm khoai tây chiên" data-price="300.000 VND" data-image="Menu/Hàu ăn kèm khoai tây chiên.jpg" data-description="Hàu ăn kèm khoai tây chiên là món ăn độc đáo, kết hợp vị tươi ngon của hàu với vị giòn rụm của khoai tây chiên." data-ingredients="Hàu, Khoai tây, Bột chiên xù, Trứng gà, Dầu ăn, Gia vị">
                 <img src="Menu/Hàu ăn kèm khoai tây chiên.jpg">
                 <h3>Hàu ăn kèm khoai tây chiên</h3>
-                <p> Giá: 300.000 VND</p>
+                <p class="price"> Giá: 300.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Bánh trứng nướng caramel" data-price="120.000 VND" data-image="Menu/Bánh trứng nướng.jpg" data-description="Bánh trứng nướng caramel là món tráng miệng mềm mịn, thơm ngon, với vị ngọt dịu của caramel và vị béo ngậy của trứng." data-ingredients="Trứng gà, Sữa tươi, Đường, Vani">
                 <img src="Menu/Bánh trứng nướng.jpg">
                 <h3>Bánh trứng nướng caramel</h3>
-                <p> Giá: 120.000 VND</p>
+                <p class="price"> Giá: 120.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Bánh tiramisu" data-price="150.000 VND" data-image="Menu/Bánh tiramisu.jpg" data-description="Bánh tiramisu là món tráng miệng nổi tiếng của Ý, với vị cà phê đậm đà, kem phô mai mềm mịn và lớp bột cacao thơm lừng." data-ingredients="Bánh ladyfinger, Cà phê, Phô mai Mascarpone, Trứng gà, Đường, Cacao">
                 <img src="Menu/Bánh tiramisu.jpg">
                 <h3>Bánh tiramisu</h3>
-                <p> Giá: 150.000 VND</p>
+                <p class="price"> Giá: 150.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Kem panna cotta" data-price="100.000 VND" data-image="Menu/Kem panna cotta.jpg" data-description="Kem panna cotta là món tráng miệng thanh mát, mềm mịn, với vị ngọt dịu của kem và hương vị tinh tế." data-ingredients="Kem tươi, Sữa tươi, Đường, Gelatin, Vani">
                 <img src="Menu/Kem panna cotta.jpg">
                 <h3>Kem panna cotta</h3>
-                <p> Giá: 100.000 VND</p>
+                <p class="price"> Giá: 100.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Rượu Kir Royal" data-price="180.000 VND" data-image="Menu/Rượu Kir Royal.jpg" data-description="Rượu Kir Royal là một loại cocktail tuyệt vời để khai vị hoặc thưởng thức trong những buổi tiệc nhẹ." data-ingredients="Rượu Champagne, Rượu lý chua đen">
                 <img src="Menu/Rượu Kir Royal.jpg">
                 <h3> Rượu Kir Royal </h3>
-                <p> Giá: 180.000 VND</p>
+                <p class="price"> Giá: 180.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Rượu Bellini" data-price="200.000 VND" data-image="Menu/Rượu Bellini.jpg" data-description="Rượu Bellini là một loại cocktail trái cây nhẹ nhàng, sảng khoái, có nguồn gốc từ Ý." data-ingredients="Rượu Prosecco, Nước ép đào">
                 <img src="Menu/Rượu Bellini.jpg">
                 <h3>Rượu Bellini</h3>
-                <p> Giá: 200.000 VND</p>
+                <p class="price"> Giá: 200.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Cocktail Espresso Martini" data-price="230.000 VND" data-image="Menu/Cocktail Espresso Martini.jpg" data-description="Cocktail Espresso Martini là một loại cocktail mạnh mẽ và kích thích, hoàn hảo để thưởng thức sau bữa tối." data-ingredients="Vodka, Cà phê espresso, Rượu mùi cà phê, Đường">
                 <img src="Menu/Cocktail Espresso Martini.jpg">
                 <h3>Cocktail Espresso Martini</h3>
-                <p> Giá: 230.000 VND</p>
+                <p class="price"> Giá: 230.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Rượu Aperol Spritz" data-price="220.000 VND" data-image="Menu/Rượu Aperol Spritz.jpg" data-description="Rượu Aperol Spritz là một loại cocktail освежающий và sảng khoái, rất phổ biến ở Ý." data-ingredients="Rượu Prosecco, Rượu Aperol, Soda, Cam">
                 <img src="Menu/Rượu Aperol Spritz.jpg">
                 <h3>Rượu Aperol Spritz</h3>
-                <p> Giá: 220.000 VND</p>
+                <p class="price"> Giá: 220.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Súp lạnh Tây Ban Nha" data-price="150.000 VND" data-image="Menu/Súp lạnh Tây Ban Nha.jpg" data-description="Súp lạnh Tây Ban Nha là một món ăn thanh mát và bổ dưỡng, rất thích hợp để thưởng thức trong những ngày hè nóng bức." data-ingredients="Cà chua, Dưa chuột, Ớt chuông, Hành tây, Tỏi, Dầu ô liu, Giấm">
                 <img src="Menu/Súp lạnh Tây Ban Nha.jpg">
                 <h3>Súp lạnh Tây Ban Nha</h3>
-                <p> Giá: 150.000 VND</p>
+                <p class="price"> Giá: 150.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+             <div class="product-card" data-name="Thịt bò muối chua kiểu Đức" data-price="450.000 VND" data-image="Menu/Thịt bò muối chua kiểu Đức.jpg" data-description="Thịt bò muối chua kiểu Đức là một món ăn đậm đà và hấp dẫn, thường được ăn kèm với bánh mì đen và mù tạt." data-ingredients="Thịt bò, Muối, Đường, Gia vị, Giấm">
                 <img src="Menu/Thịt bò muối chua kiểu Đức.jpg">
                 <h3>Thịt bò muối chua kiểu Đức</h3>
-                <p> Giá: 450.000 VND</p>
+                <p class="price"> Giá: 450.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-name="Thịt bê tẩm bột chiên kiểu Áo" data-price="300.000 VND" data-image="Menu/Thịt bê tẩm bột chiên kiểu Áo.jpg" data-description="Thịt bê tẩm bột chiên kiểu Áo là một món ăn kinh điển, với thịt bê mềm và lớp vỏ ngoài giòn tan." data-ingredients="Thịt bê, Trứng, Bột mì, Bột chiên xù, Bơ">
                 <img src="Menu/Thịt bê tẩm bột chiên kiểu Áo.jpg">
                 <h3>Thịt bê tẩm bột chiên kiểu Áo</h3>
-                <p> Giá: 300.000 VND</p>
+                <p class="price"> Giá: 300.000 VND</p>
                 <br>
                 <button>Chi tiết</button>
             </div>
         </section>
         <section id="feedback-section">
-            <h2>Đánh Giá Khách Hàng</h2>
+            <h2>ĐÁNH GIÁ KHÁCH HÀNG</h2>
             <div class="feedback-card">
                 <h4>Nguyễn Đức An</h4>
-                <p>Món ăn: Bánh pháo đài Stilt Fisherman Indulgence</p>
+                <p class="dish-name">Món ăn: Bánh pháo đài Stilt Fisherman Indulgence</p>
                 <p>"Bánh vừa sang trọng, tinh tế lại còn ngon và mang hương vị rất đặc biệt khiến tôi nhớ mãi!"</p>
             </div>
             <div class="feedback-card">
                 <h4>Nguyễn Tuấn Anh</h4>
-                 <p>Món ăn: Tiramisu</p>
+                 <p class="dish-name">Món ăn: Tiramisu</p>
                 <p>"Một món tráng miệng với hương vị ấn tượng. Rất đặc trưng mà không thể tìm thấy ở nơi khác!"</p>
             </div>
             <div class="feedback-card">
                 <h4>Nguyễn Quang Long</h4>
-                 <p>Món ăn: Mì cua Hoàng Đế</p>
+                 <p class="dish-name">Món ăn: Mì cua Hoàng Đế</p>
                 <p>"Là dân vùng biển nhưng tôi chưa từng thử qua món nào "tươi" ngon như vậy trước khi đến đây. Món ăn khiến tôi phải thốt lên "wow" khi nếm thử miếng đầu tiên"</p>
             </div>
              <div class="feedback-card">
                 <h4>Lê Phương Thảo</h4>
-                 <p>Món ăn: Rượu Kir Royal</p>
+                 <p class="dish-name">Món ăn: Rượu Kir Royal</p>
                 <p>"Kir Royal là một loại cocktail tuyệt vời để khai vị hoặc thưởng thức trong những buổi tiệc nhẹ. Sự kết hợp giữa vị ngọt của lý chua đen và vị chua của rượu Champagne tạo nên một thức uống cân bằng, sảng khoái và dễ chịu."</p>
             </div>
-           
         </section>
     </main>
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="close-modal" class="close-button">&times;</button>
+            </div>
+            <div class="product-details-content">
+                <img id="modal-image" src="" alt="">
+                <div id="modal-info" class="product-details-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <ul id="modal-ingredients">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- Footer -->
+ <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-col">
+            <div class="logo"><img src="logo/logo nhà hàng.webp" alt="logo"></div>
+            <h3>CIT'S RESTAURANT</h3>
+            <p>Mang đến hương vị đẳng cấp thế giới</p>
+        </div>
+        <div class="footer-col">
+            <h3>Liên hệ</h3>
+            <p><i class="fas fa-phone"></i> 0123 456 789</p>
+            <p><i class="fas fa-envelope"></i> info@citsrestaurant.com</p>
+        </div>
+        <div class="footer-col">
+            <h3>Theo dõi chúng tôi</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="MENU.js"></script>
 </body>
 </html>
+
 
 
